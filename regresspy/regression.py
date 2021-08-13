@@ -39,7 +39,7 @@ class Regression(object):
         Returns
             (ndarray): predictions of shape (observations x 1)
         """
-        predictions = #TODO
+        predictions = W*X#TODO
         return predictions
 
     def score(self, X: ndarray, Y: ndarray, metric='rmse') -> float:
@@ -61,8 +61,16 @@ class Regression(object):
             'rmse': rmse
         }
 
-        predictions = #TODO
-        score = #TODO
+        predictions =self.weights['W']*X #TODO
+        score = input()#TODO
+        if score == "mae":
+            return metrics.mae
+        elif score == "sse":
+            return metrics.sse
+        elif score == "mse":
+            return metrics.mse
+        else score == "rmse":
+            return metrics.rmse
         return score
 
     def _initialize_weights(self, shape: Tuple[int, int]) -> None:
@@ -77,10 +85,12 @@ class Regression(object):
     def _train(self, X: ndarray, Y: ndarray) -> None:
         """Train data using gradient descent
         """
+        
         for i in range(self._epochs):
             print('Epoch: ', i+1)
-            loss, info = #TODO Compute forward propagation
+            loss, info = forward() #TODO Compute forward propagation
             print('Loss: ', loss)
-            grads = #TODO Compute backward propagation
-            self._weights['W'] = self._weights['W'] - #TODO 
-            self._weights['B'] = self._weights['B'] - #TODO
+            grads = backward()#TODO Compute backward propagation
+            self._weights['W'] = self._weights['W'] -  (self._lr * grads) #TODO 
+            self._weights['B'] = self._weights['B'] - (self._lr * grads)#TODO
+            
