@@ -1,60 +1,54 @@
-# Python Package Template Project
+# Regression Evaluation Package 
 
 [![image](https://img.shields.io/pypi/v/py-package-template.svg)](#)
 [![Build Status](https://travis-ci.org/AlexIoannides/py-package-template.svg?branch=master)](#)
 
-The py-template-project package allows users to download the contents of this [GiHub repository](https://github.com/AlexIoannides/py-package-template),  containing a skeleton Python package project to be used as a template for kick-starting development of **any** type of Package; destined for upload to PyPI, or just for local install using Pip. The downloaded package includes the following components to aid rapid development without having to spend time cloning existing set-ups from other projects:
+The regress_py package allows users to download the contents of this [GiHub repository](https://github.com/roman1117459/regress_py_package),  containing a Regression Evaluating Python package project to be used as a gradient descent, loss and regression problem for kick-starting Machine learning or Deep Learning algorithm model evaluation of **any** type of Package; destined for upload to just for local install using Pip. The downloaded package includes the following components to measure or evalute the loss or any kind of measurement without having to spend time cloning existing set-ups from other projects:
 
 - a minimal `setup.py` file;
 - testing with PyTest;
-- documentation (HTML and PDF) generated using Sphinx with auto-documentation setup; 
-- an entry-point that allows the package to execute functions directly from the command line - e.g. to start a server, interact with a user, download a GitHub repository, etc.; and,
-- automated testing and deployment using Travis CI.
+- Evaluate the gradient descent loss and info; 
+- automated testing.
 
 A description of how to work with (and modify) each of these components, is provided in more detail in the sections that follow-on below, as well as in the documentation and within the example code bundled with the package.
 
-This is obviously a opinionated view of how a Python package project ought to be structured, based largely on my own experiences and requirements. Where I have needed guidance on this subject, I have leant heavily on the advice given by the [Python Packaging Authority (PyPA)](https://packaging.python.org/guides/distributing-packages-using-setuptools/) and used the excellent [Requests](https://github.com/requests/requests) and [Flask](https://github.com/pallets/flask) projects as references for 'best practices'.
+This is obviously a opinionated view of how a Python package project ought to be structured, based largely on my own experiences and requirements.
 
 ## Installing
 
 Install and update using [pip](https://pip.pypa.io/en/stable/quickstart/):
 
 ```bash
-pip3 install py-template-project
+pip3 install regresspy
 ```
 
-## Downloading a Python Package Template Project
+## Downloading a regress_py package
 
-To down load the latest version of the Python Package Template project located in [this GiHub repository](https://github.com/AlexIoannides/py-package-template), execute the following command from the command line:
+To down load the latest version of this project located in [this GiHub repository](https://github.com/roman1117459/regress_py_package), execute the following command from the command line:
 
 ```bash
-py-package-template install
+pip install regresspy
 ```
 
 This will be downloaded to the current directory and will contain the following directory structure:
 
 ```bash
-py-package-tempate/
- |-- docs/
- |-- |-- build_html/
- |-- |-- build_latex/
- |-- |-- source/
- |-- py-pkg/
+regress_py_package/
+
+ |-- regresspy/
  |-- |-- __init__.py
- |-- |-- __version__.py
- |-- |-- curves.py
- |-- |-- entry_points.py
- |-- tests/
- |-- |-- test_data/
- |-- |   |-- supply_demand_data.json
+ |-- |-- gradient_descent.py
+ |-- |-- loss.py
+ |-- |-- regression.py
+ |-- test/
  |-- |   __init__.py
- |-- |   conftest.py
- |-- |   test_curves.py
- |-- .env
+ |-- |   model.py
+ |-- |   test.py
+ |-- .idea
  |-- .gitignore
- |-- Pipfile
- |-- Pipfile.lock
+ |-- License
  |-- README.md
+ |-- requirements.txt
  |-- setup.py
 ```
 
