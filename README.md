@@ -1,4 +1,4 @@
-# Regression Evaluation Package 
+# Regression Evaluating Package 
 
 [![image](https://img.shields.io/pypi/v/py-package-template.svg)](#)
 [![Build Status](https://travis-ci.org/AlexIoannides/py-package-template.svg?branch=master)](#)
