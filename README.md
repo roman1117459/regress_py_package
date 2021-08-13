@@ -62,5 +62,19 @@ It will create 2 new directory which is called build and dist. Inside of dist fo
 ```bash
 pip install .\regresspy-0.2.0-py3-none-any.whl
 ```
+## Test the regress_py_package
+
+You can also check the liner regression trained rmse value from scikitlearn and also can observe loss values according to the epochs. You can also check your train rmse according to my code. To check the model.py, open powershell and run this code:
+
+```bash
+python model.py
+```
+You can also test different kind of loss such as  mae, sse, mse, rmse. For this just run the below code: 
+```bash
+python test_loss.py
+```
+
+Now just declare the parameters and test your values.
+
 Done! regresspy package is installed successfully. Now you can run it into your Powershell or Commandpromp. Enjoy...... 
 
