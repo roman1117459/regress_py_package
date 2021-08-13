@@ -13,13 +13,7 @@ A description of how to work with (and modify) each of these components, is prov
 
 This is obviously a opinionated view of how a Python package project ought to be structured, based largely on my own experiences and requirements.
 
-## Installing
 
-Install and update using [pip](https://pip.pypa.io/en/stable/quickstart/):
-
-```bash
-pip3 install regresspy
-```
 
 ## Downloading a regress_py package
 
@@ -50,5 +44,23 @@ regress_py_package/
  |-- requirements.txt
  |-- setup.py
 ```
+## Installing
 
+Install and update using [pip](https://pip.pypa.io/en/stable/quickstart/):
+
+```bash
+pip install wheel
+```
+Wheel will build the package. and after that run: 
+
+```bash
+python setup.py bdist_wheel
+python setup.py sdist bdist_wheel
+
+```
+It will create 2 new directory which is called build and dist. Inside of dist folder there will found a wheel file. After run this command:
+```bash
+pip install .\regresspy-0.2.0-py3-none-any.whl
+```
+Done! regresspy package is installed successfully. Now you can run it into your Powershell or Commandpromp. Enjoy...... 
 
