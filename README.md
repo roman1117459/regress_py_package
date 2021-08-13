@@ -1,7 +1,7 @@
 # Python Package Template Project
 
-[![image](https://img.shields.io/pypi/v/py-package-template.svg)](https://pypi.org/project/py-package-template/)
-[![Build Status](https://travis-ci.org/AlexIoannides/py-package-template.svg?branch=master)](https://travis-ci.org/AlexIoannides/py-package-template)
+[![image](https://img.shields.io/pypi/v/py-package-template.svg)](#)
+[![Build Status](https://travis-ci.org/AlexIoannides/py-package-template.svg?branch=master)](#)
 
 The py-template-project package allows users to download the contents of this [GiHub repository](https://github.com/AlexIoannides/py-package-template),  containing a skeleton Python package project to be used as a template for kick-starting development of **any** type of Package; destined for upload to PyPI, or just for local install using Pip. The downloaded package includes the following components to aid rapid development without having to spend time cloning existing set-ups from other projects:
 
