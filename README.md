@@ -8,7 +8,6 @@ The regress_py package allows users to download the contents of this [GiHub repo
 - a minimal `setup.py` file;
 - testing with PyTest;
 - Evaluate the gradient descent loss and info; 
-- automated testing.
 
 A description of how to work with (and modify) each of these components, is provided in more detail in the sections that follow-on below, as well as in the documentation and within the example code bundled with the package.
 
