@@ -39,7 +39,7 @@ class Regression(object):
         Returns
             (ndarray): predictions of shape (observations x 1)
         """
-        predictions = W*X#TODO
+        predictions = weights['W'] @ X#TODO
         return predictions
 
     def score(self, X: ndarray, Y: ndarray, metric='rmse') -> float:
@@ -61,7 +61,7 @@ class Regression(object):
             'rmse': rmse
         }
 
-        predictions =self.weights['W']*X #TODO
+        predictions =self.weights['W']* T @ X #TODO
         score = input()#TODO
         if score == "mae":
             return metrics.mae
