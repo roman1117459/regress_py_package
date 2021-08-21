@@ -73,8 +73,50 @@ You can also test different kind of loss such as  mae, sse, mse, rmse. For this 
 ```bash
 python test_loss.py
 ```
+Steps : 
 
-Now just declare the parameters and test your values.
+-First of all I have set weight and bias in predict function and return prediction.
 
-Done! regresspy package is installed successfully. Now you can run it into your Powershell or Commandpromp. Enjoy...... 
+-Then I have measure the score all the (Rmse, MSE, mae, sse) function using if, else from the score function and return the score.
+
+-Actually i change self weight and bias but in the initialize_weights function but my course teacher already did it.
+
+-And finally I have change the train function using forward and backward function from the gradient descent file.
+
+-----------------------------------------------------
+Model.py file.
+-----------------------------------------------------
+-At first i have changed the reshape in Y predict portion. I got error and again i set the reshape and run successfully.
+
+-I Used the stochastic gradient descent regressor and set iteration 20.
+
+-I trained X, Y through fit function from regression file of the stochastic gradient descent.
+
+-I predict stochastic gradient descent through predict function from regression.py file.
+
+-I calculated stochastic gradient descent rmse through rmse function from loss.py file.
+
+-And finally i got stochastic gradient descent rmse value, where the value is 0.5952712980765811.
+
+-I evaluated regression value through regression function from regression.py file and set epoch/iteration 100 and also learning rate was 0.0001.
+
+-I trained X, Y through fit function from regression file of the regression value.
+
+-I predict regression value through predict function from regression.py file.
+
+-I calculated score of regression rmse through score function from regression.py file.
+
+-And finally i got RMSE value, where the value is 1.2478209695866114
+
+
+Test :
+
+- Go to the root folder of regresspy and run the command 'pytest' from your command prompt (you should have the pytest module installed on your system)
+```bash
+pip install pytest
+```
+-This will automatically check whether your test functions are correct or not.
+
+
+If 4 item passed correctly. Done! regresspy package is working now. Enjoy...... 
 

@@ -1,5 +1,3 @@
-
-
 from sklearn.linear_model import SGDRegressor
 from sklearn.datasets import load_iris
 from regresspy.regression import Regression
@@ -24,7 +22,7 @@ print('Stochastic Gradient Descent Regressor RMSE value:', str(sto_chas_grad_rms
 # #TODO Perform a linear regression using your code and calculate training rmse.
 
 
-regression_value = Regression(epochs= 100, learning_rate= 0.0001)
+regression_value = Regression(epochs= 20, learning_rate= 0.0001)
 regression_value.fit(X, Y)
 reg_pred = regression_value.predict(X)
 #print(reg_pred.shape)
